@@ -1,35 +1,26 @@
-const { apiEndpoint, accessToken } = require('./prismic-configuration');
-var repo = /([^\/]+)\.prismic\.io/.exec(apiEndpoint);
-
 module.exports = {
   siteMetadata: {
-    title: `Coffee Shop Demo`,
-    description: `Gatsby + Prismic!`,
-    author: `@raulg`,
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-prismic-graphql`,
       options: {
-        repositoryName: repo[1],
-        path: '/preview',
-        previews: true,
-        accessToken,
-        pages: [{
-          type: 'Product',
-          match: '/products/:uid',
-          path: '/product',
-          component: require.resolve('./src/templates/product.js')
-        },{
-          type: 'Blog_post',
-          match: '/blog/:uid',
-          path: '/blogpost',
-          component: require.resolve('./src/templates/blogPost.js')
-        }]
-      }
+        repositoryName: 'hyamtest',
+      },
     },
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -46,4 +37,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};

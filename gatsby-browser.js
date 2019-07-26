@@ -1,4 +1,3 @@
 const { registerLinkResolver } = require('gatsby-source-prismic-graphql');
-const { linkResolver } = require('./src/utils/linkResolver');
- 
-registerLinkResolver(linkResolver);
+
+registerLinkResolver(require('./src/utils/linkResolver').linkResolver);

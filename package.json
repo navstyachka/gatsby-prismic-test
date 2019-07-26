@@ -1,27 +1,30 @@
 {
-  "name": "prismic-gatsby-coffee-sample",
+  "name": "@examples/static-query",
   "private": true,
-  "description": "A sample website built using Gatsby connected to Prismic data source",
-  "version": "0.1.0",
-  "author": "Raul Gonzalez @raulg",
+  "version": "3.4.0-beta.0",
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.3.27",
-    "gatsby-plugin-manifest": "^2.0.29",
+    "@babel/polyfill": "^7.2.5",
+    "esm": "^3.2.18",
+    "gatsby": "^2.13.8",
+    "gatsby-image": "^2.0.34",
+    "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-source-prismic-graphql": "^3.1.2",
-    "graphql": "^14.2.1",
-    "node-sass": "^4.11.0",
-    "prismic-javascript": "^2.0.3",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sharp": "^2.0.29",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-source-graphql-universal": "^3.0.5",
+    "gatsby-source-prismic-graphql": "^3.4.0-beta.0",
+    "gatsby-transformer-sharp": "^2.1.17",
     "prismic-reactjs": "^0.3.2",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.16.4"
   },
   "keywords": [
     "gatsby"
@@ -33,11 +36,16 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "now-build": "npm run build"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
+  "eslintIgnore": [
+    "*.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/raulg/prismic-gatsby-coffee-sample"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
