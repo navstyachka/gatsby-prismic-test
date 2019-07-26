@@ -1,0 +1,43 @@
+{
+  "name": "prismic-gatsby-coffee-sample",
+  "private": true,
+  "description": "A sample website built using Gatsby connected to Prismic data source",
+  "version": "0.1.0",
+  "author": "Raul Gonzalez @raulg",
+  "dependencies": {
+    "gatsby": "^2.3.27",
+    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-source-prismic-graphql": "^3.1.2",
+    "graphql": "^14.2.1",
+    "node-sass": "^4.11.0",
+    "prismic-javascript": "^2.0.3",
+    "prismic-reactjs": "^0.3.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "now-build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raulg/prismic-gatsby-coffee-sample"
+  }
+}
